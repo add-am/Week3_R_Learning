@@ -1,6 +1,8 @@
 ---
 title: "The Basics of Data"
-format: html
+format: 
+    html:
+        embed-resources: true
 ---
 
 # Introduction
@@ -126,7 +128,7 @@ Make sure to name objects well as it will save you a lot of time and confusion i
 
  Some examples are as follows:
 
- ```{r}
+```{r}
 #| error: true
 
 #no
@@ -137,7 +139,7 @@ _my_object <- "text"
 my_object <- "text"
 .my_object_1 <- "text"
 
- ```
+```
 
 # Manipulating Data
 
@@ -332,7 +334,7 @@ However, the mutate function on its own is still limited. This is because `mutat
 
 We can visualise this as follows:
 
-![An Example of an Ungrouped Mutate]("image2.png")
+![An Example of an Ungrouped Mutate](image2.png)
 
 ## Group By
 
@@ -364,7 +366,7 @@ The grouping function allows us to perform operations on distinct groups in the 
 
 We can visualise this as follows:
 
-![An Example of a Grouped Mutate]("image3.png")
+![An Example of a Grouped Mutate](image3.png)
 
 Let's imagine that you have a two step process:
 
@@ -420,7 +422,7 @@ our_summarised_data_2 <- our_data |>
 
 We can visualise this as follows:
 
-![An Example of Summarising]("image4.png")
+![An Example of Summarising](image4.png)
 
 # Final Thoughts
 
